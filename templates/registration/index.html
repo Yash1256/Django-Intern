@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="{% static  'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.min.css' %}">
+</head>
+
+<body>
+    <div class="features-blue">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Django Intern</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facere aperiam eum. Nostrum sint, pariatur delectus maiores accusamus tempora illo officiis dolore rerum, incidunt deleniti est magni iste iure soluta? </p>
+            </div>
+            <div class="row features d-flex justify-content-center">
+                <div class="col-sm-6 col-md-4 item"><i class="fa fa-lock icon"></i>
+                    <a href="{% url 'login' %}"><h3 class="name" style="color:white; text-decoration: none;">Login Page</h3></a>
+                    <p class="description" style="text-align: left;">Get the Unlimited Benefits and easier results by Signing Up into the Website</p>
+                </div>
+                <!-- <div class="col-sm-6 col-md-4 item"><i class="fa fa-clock-o icon"></i>
+                    <a href="#"><h3 class="name">Always available</h3></a>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div> -->
+                <div class="col-sm-6 col-md-4 item"><i class="fa fa-user-plus icon"></i>
+                    <a href="{% url 'register' %}"><h3 class="name" style="color:white; text-decoration: none;">Register Page</h3></a>
+                    <p class="description">Get The Unlimited Benefits of Login into the Website. It will show all the results in the tabulated manner and leave a feedback.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><i class="fa fa-bookmark icon"></i>
+                    <a href="{% url 'posts' %}"><h3 class="name" style="color:white; text-decoration: none;">All Posts</h3></a>
+                    <p class="description">Read all the interesting and latests posts by esteemed Authors.</p>
+                </div>
+                <!-- <div class="col-sm-6 col-md-4 item"><i class="fa fa-plane icon"></i>
+                    <a href="#"><h3 class="name">Fast</h3></a>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                </div> -->
+                <div class="col-sm-6 col-md-4 item"><i class="fa fa-pencil icon"></i>
+                    <a href="{% url 'authors' %}"><h3 class="name" style="color:white; text-decoration: none;">All Authors</h3></a>
+                    <p class="description">Explore the profile of the esteemed Authors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

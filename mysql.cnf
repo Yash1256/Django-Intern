@@ -1,0 +1,6 @@
+[client]
+host = sql144.main-hosting.eu
+database = u319828291_assessment
+user = u319828291_assess_u
+password = assess_p
+default-character-set = utf8

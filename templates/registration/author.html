@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'AuthorBootstrap-DataTables.css' %}">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Start: Bootstrap DataTables --><div class="bootstrap_datatables">
+<div class="container py-5">
+  <header class="text-center text-black">
+    <h1 class="display-4">{{ name }}</h1>
+  </header>
+  <div class="row py-5">
+    <div class="col-lg-10 mx-auto">
+      <div class="card rounded shadow border-0">
+        <div class="card-body p-5 bg-white rounded">
+          <div class="table-responsive">
+            <table id="example" style="width:100%" class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th><strong>Number of Posts Posted</strong></th>
+                  <th class="position"><strong>{{ count }}</strong></th>
+                </tr>
+              </thead>
+              <tr>
+                <th><strong>Date Of Birth</strong></th>
+                <th class="position"><strong>{{ bdate }}</strong></th>
+              </tr>
+              </tbody>
+            </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <!-- End: Bootstrap DataTables -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+{#    <script src="{% url 'assets/js/Bootstrap-DataTables.js?h=ae06441082f660b204a3db1fc70b2970' %}"></script>#}
+</body>
+
+</html>

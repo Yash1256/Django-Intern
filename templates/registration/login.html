@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'Google-Style-Login.css' %}">
+</head>
+
+<body>
+    <div class="login-card"><img class="profile-img-card" src="{% static 'login_avtar.png' %}">
+        <p class="profile-name-card"> </p>
+        <form class="form-signin" method="post">{% csrf_token %}<span class="reauth-email"> </span><input name="email" class="form-control" type="email" id="inputEmail" required placeholder="Email address" autofocus=""><input name="password" class="form-control" type="password" id="inputPassword" required="" placeholder="Password">
+            <div class="checkbox">
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Remember me</label></div>
+                {% if error %}
+                    <div class="form-check">{{ error }}</div>
+                {% endif %}
+    </div><br><button class="btn btn-primary btn-block btn-lg btn-signin" type="submit">Login</button></form>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.bootstrap_datatables {
+  min-height: 100vh;
+}
+.position {
+  text-align: center;
+  text-decoration: dashed;
+  text-shadow: black;
+}
+.button {
+  height: 44px;
+  font-size: 14px;
+  width: 10%;
+  display: block;
+  margin-bottom: 10px;
+  z-index: 1;
+  position:relative;
+  box-sizing: border-box;
+}
+.button_page {
+  height: 44px;
+  font-size: 16px;
+  width: 5%;
+  padding-left: 0.5rem;
+  display: block;
+  margin-bottom: 10px;
+  z-index: 1;
+  position:relative;
+  box-sizing: border-box;
+  }
+}
